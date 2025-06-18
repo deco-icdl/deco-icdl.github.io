@@ -50,7 +50,7 @@ h4{font-size:1.33em;}
 p{list-style:none; margin:24px auto 24px auto; padding:0px; width:900px; text-align:left;}
 li a, p a {text-decoration:underline; text-decoration-color:#b8860b;}
 ul{list-style:none; margin:24px auto 24px auto; padding:0px; width:800px; text-align:left;}
-ul li{list-style:none; margin:0px auto 0px auto; padding:0px; text-align:left;}
+ul li{list-style:disc; margin:0px auto 0px auto; padding:0px; text-align:left;}
 i,em{font-style:italic;}
 b,strong{font-weight:bold;}
 sup{
@@ -72,19 +72,20 @@ table{
 }
 th,td{
     text-align: left;
+    vertical-align: top;
     /* UNCOMMENT THIS FOR DEBUGGING THE ALIGNMENT */
     /*border: 1px solid black;*/
 }
 
 /* Website Banner */
 .banner {position: relative; font-family:'Roboto Slab',serif;}
-.top-left {font-size:5.33em; color: #505050; background: #fafafa; text-align: center; width: 1000px; height: 67px; position: absolute; padding: 36px 0 0 0; top: 0px;}
-.bottom-right {font-size:2.33em; color: #fafafa; line-height: 1.5em; width: auto; height: 100px; padding: 0px 27px 27px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
+.top-left {font-size:3em; color: #505050; background: #fafafa; text-align: center; width: 1000px; height: 67px; position: absolute; padding: 36px 0 0 0; top: 0px;}
+.bottom-right {font-size:1.5em; color: #fafafa; line-height: 1.5em; width: auto; height: 75px; padding: 0px 18px 18px 0px; text-align: right; position: absolute; bottom: 0px; right: 0px; text-shadow: 0px 0px 6px #000000;}
 
 /* Conference Title Logo */
-.title1{color: #b2132e; font-size:0.6em; } /* text-shadow: 1px 1px 3px #c0c0c0;} */
-.title2{color: #52739e; font-size:0.6em; } /* text-shadow: 1px 1px 3px #c0c0c0;} */
-.year{color: #505050; font-size:0.5em; font-weight: lighter;}
+.title1{color: #b2132e; text-shadow: 1px 1px 3px #c0c0c0;} 
+.title2{color: #52739e; text-shadow: 1px 1px 3px #c0c0c0;}
+.year{color: #505050; font-size:0.8em; font-weight: lighter;}
 
 /* Navigation Links (Home, Registration, etc) */
 table.navigation{width:800px;}
@@ -115,7 +116,9 @@ table.flyers{width:800px;}
 td.flyer{white-space:nowrap; width:50%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
 td.sponsor img{width: 100%}
 
-footer{font-size:0.875em; margin-top:12em; text-align:center;}
+/* The Footer */
+table.footer{font-size:0.875em; margin: 72px auto 12px auto; width:333px;}
+td.footer{width:auto; text-align:center; vertical-align:middle;}
 
 /* My hacky way of making the site mobile-friendly */
 @media only screen and (max-width: 1100px) {
@@ -126,4 +129,3 @@ footer{font-size:0.875em; margin-top:12em; text-align:center;}
     td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
     table.footer{font-size:0.33em;}
 }
-
