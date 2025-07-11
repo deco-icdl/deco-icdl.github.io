@@ -129,3 +129,31 @@ td.footer{width:auto; text-align:center; vertical-align:middle;}
     td.navigation{font-size:1.5em; padding:0px 20px 0px 20px;}
     table.footer{font-size:0.33em;}
 }
+
+/* Speakers */
+table.speaker_list{width: 100%;border-collapse: collapse;}
+td.speaker_list{white-space: pre-line; width:10%; text-align:center; vertical-align:middle; padding:0px 0px 0px 0px;}
+td.speaker_text,
+td.speaker_image {
+    vertical-align: middle;
+    text-align: center;
+    padding: 20px;
+}
+td.speaker_image img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+td.speaker_text p {
+    text-align: left; /* or 'center' if you prefer */
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* Additional */
+.centered{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 30px;
+}
